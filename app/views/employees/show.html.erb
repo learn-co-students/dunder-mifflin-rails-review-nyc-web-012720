@@ -1,0 +1,8 @@
+
+
+<h1><%= @employee.to_s %></h1>
+<img src="<%= @employee.img_url %>">
+<p><%= @employee.alias %></p>
+<p><%= @employee.title %></p>
+<p><%= @employee.office %></p>
+<p>Dog: <%= link_to @employee.dog.name, @employee.dog  %></p>

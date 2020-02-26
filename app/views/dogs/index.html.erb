@@ -1,0 +1,4 @@
+<h1 style="color: magenta" >ALL DOGS</h1>
+<% @dogs.each do |dog| %>
+    <p><%= link_to dog.name, dog %> - <%= dog.employees.count %></p>
+<% end %>
