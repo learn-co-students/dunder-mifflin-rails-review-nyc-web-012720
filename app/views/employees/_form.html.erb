@@ -1,0 +1,15 @@
+<% if flash[:errors]%>
+    <% flash[:errors].each do |error|%>
+    <%= error %>
+<%end%>
+<%end%>
+<%= form_for @employee do |f| %>
+<p> First Name:<%= f.text_field :first_name %>
+<p> Last Name: <%= f.text_field :last_name %>
+<p> Alias: <%= f.text_field :alias %>
+<p> Title:<%= f.text_field :title %>
+<p> Office: <%= f.text_field :office %>
+<p> Image Url: <%= f.text_field :img_url %>
+<%= f.collection_select :dog_id, Dog.all, :id, :name %>
+<%= f.submit %>
+<% end %>
