@@ -1,0 +1,11 @@
+<h1>Employee's index page!</h1>
+
+<% @employees.each do |employee| %>
+<div>
+<p>
+<%= image_tag(employee.img_url, :size => "260x180") %>
+<br>
+<%= link_to employee.full_name, employee %>
+</p>
+</div> 
+<% end %>

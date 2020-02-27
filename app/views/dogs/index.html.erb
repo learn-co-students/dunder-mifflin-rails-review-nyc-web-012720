@@ -1,0 +1,8 @@
+<h1>Dog's index page!!</h1>
+
+<% @dogs.each do |dog| %>
+    <p>
+    <label for="name">Dog's name:</label>
+    <%= dog.name %>
+    </p> 
+    <% end %>
