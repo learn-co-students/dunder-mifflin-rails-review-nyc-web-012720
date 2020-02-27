@@ -1,0 +1,12 @@
+<h1>Employee's show page!!</h1>
+
+<%= image_tag(@employee.img_url, :size => "260x180") %>
+<br>
+<br>
+<h3><% @employee.full_name %></h3>
+<p><label for="alias">Alias: </label><%= @employee.alias %></p>
+<p><label for="title">Title:</label><%= @employee.title %></p>
+<p><label for="office">Office: </label><%= @employee.office %></p>
+<br>
+<br>
+<%= link_to "Edit", edit_employee_path %>
